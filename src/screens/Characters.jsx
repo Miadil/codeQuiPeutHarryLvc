@@ -14,7 +14,7 @@ const Characters = () => {
   return (
     <>
       {peoples.map((people) => {
-        return <Card name={people.name} image={people.image} />;
+        return <Card name={people.name} image={people.image} key={people.id} />;
       })}
     </>
   );
