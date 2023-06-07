@@ -1,0 +1,27 @@
+.logo {
+  height: 3em;
+  margin-left: 10px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.headGlobal {
+  background-color: rgb(55, 55, 55);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+}
+li {
+  padding: 16px;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
