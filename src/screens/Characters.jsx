@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import Card from "../components/Card";
 
@@ -14,7 +15,11 @@ const Characters = () => {
   return (
     <>
       {peoples.map((people) => {
-        return <Card name={people.name} image={people.image} key={people.id} />;
+        return (
+          <Link to={`/characters/${people.id}`}>
+            <Card name={people.name} image={people.image} key={people.id} />
+          </Link>
+        );
       })}
     </>
   );
